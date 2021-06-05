@@ -11,6 +11,9 @@ const prepare = async page => {
     await page.bringToFront()
 
     await page.goto('https://www.acmicpc.net/login?next=' + encodeURIComponent('/'))
+
+    await page.click('input[name="auto_login"]')
+    await page.click('input[name="login_user_id"]')
   } catch (error) {
     console.error(error)
   }
@@ -49,6 +52,10 @@ const init = async callback => {
       const [, token] = context.split('=')
 
       result = token
+
+      if (token === 'deleted') {
+        result = null
+      }
 
       await browser.close()
     } catch (error) {

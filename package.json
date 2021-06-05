@@ -1,7 +1,7 @@
 {
   "name": "boj-userspace-login",
   "version": "1.2.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "Seia-Soto <seia@outlook.kr>",
   "license": "MIT",
   "scripts": {

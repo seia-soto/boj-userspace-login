@@ -1,0 +1,24 @@
+{
+  "name": "boj-userspace-login",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Seia-Soto <seia@outlook.kr>",
+  "license": "MIT",
+  "scripts": {
+    "cli": "node bin/cli",
+    "lint": "eslint --ext .js .",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.28.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "standard-version": "^9.3.0"
+  },
+  "dependencies": {
+    "playwright": "^1.11.1"
+  }
+}
